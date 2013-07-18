@@ -1,0 +1,36 @@
+
+#include "version.h"
+
+aaaa ICON "regex.ico"
+
+#include "wx/msw/wx.rc"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION    RC_FILEVERSION
+ PRODUCTVERSION RC_FILEVERSION
+ FILEFLAGSMASK  VS_FFI_FILEFLAGSMASK
+ FILEFLAGS      VS_FF_SPECIALBUILD
+ FILEOS         VOS_NT_WINDOWS32
+ FILETYPE       VFT_APP  // VFT_DLL
+ FILESUBTYPE    VFT2_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "\0"
+            VALUE "FileVersion", RC_FILEVERSION_STRING
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "ProductName", "\0"
+            VALUE "ProductVersion", RC_FILEVERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200   // 0x0804 Simplified Chinese 1200 Unicode
+    END
+END
