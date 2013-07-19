@@ -22,6 +22,8 @@
 
 #include "version.h"
 
+#include "regex_16.xpm"
+
 //helper functions
 enum wxbuildinfoformat {
     short_f, long_f };
@@ -126,7 +128,7 @@ RegExTesterDialog::RegExTesterDialog(wxWindow* parent,wxWindowID id)
     Connect(ID_BUTTON2,wxEVT_COMMAND_BUTTON_CLICKED,(wxObjectEventFunction)&RegExTesterDialog::OnQuit);
     //*)
     TextCtrlText->Connect(ID_TEXTCTRL2,wxEVT_SET_FOCUS,(wxObjectEventFunction)&RegExTesterDialog::OnTextCtrlTextFocusEvent,NULL,this);
-	SetIcon(wxIcon(wxT("aaaa")));
+	SetIcon(wxICON(regex_16));
     Center();
     m_bNewMatch=true;
     m_nStartPos=0;
