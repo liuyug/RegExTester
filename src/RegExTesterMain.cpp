@@ -95,7 +95,7 @@ RegExTesterDialog::RegExTesterDialog(wxWindow* parent,wxWindowID id)
     BoxSizer4 = new wxBoxSizer(wxHORIZONTAL);
     StaticText2 = new wxStaticText(this, ID_STATICTEXT2, _("RegEx library:"), wxDefaultPosition, wxDefaultSize, 0, _T("ID_STATICTEXT2"));
     BoxSizer4->Add(StaticText2, 0, wxTOP|wxBOTTOM|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
-    ChoiceRegExLib = new wxChoice(this, ID_CHOICE1, wxDefaultPosition, wxSize(198,22), 0, 0, 0, wxDefaultValidator, _T("ID_CHOICE1"));
+    ChoiceRegExLib = new wxChoice(this, ID_CHOICE1, wxDefaultPosition, wxSize(198,-1), 0, 0, 0, wxDefaultValidator, _T("ID_CHOICE1"));
     BoxSizer4->Add(ChoiceRegExLib, 0, wxALL|wxALIGN_CENTER_HORIZONTAL|wxALIGN_CENTER_VERTICAL, 5);
     CheckBoxCaseInsensitive = new wxCheckBox(this, ID_CHECKBOX1, _("Case insensitive"), wxDefaultPosition, wxDefaultSize, 0, wxDefaultValidator, _T("ID_CHECKBOX1"));
     CheckBoxCaseInsensitive->SetValue(false);
